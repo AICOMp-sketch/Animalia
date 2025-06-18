@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Animalistic Modern Sign-In / Sign-Up</title>
+<!-- Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+<header role="banner" aria-label="Main site header">
+  <div class="brand" aria-label="Brand identity">
+    <span class="material-icons brand-icon" aria-hidden="true">pets</span>
+    Animalia
+  </div>
+  <nav aria-label="Primary navigation">
+    <a href="#" tabindex="-1">Home</a>
+    <a href="#" tabindex="-1">Features</a>
+    <a href="#" tabindex="-1">Contact</a>
+  </nav>
+</header>
+<main>
+  <section class="image-panel" aria-hidden="true">
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aa60b88c-0aa1-4150-8811-0dedc345cc28.png" alt="Elegant abstract animal pattern with indigo and teal gradient, modern artistic style" loading="lazy" width="600" height="900" />
+    <div class="image-caption">Inspired by the beauty and power of nature’s creatures.</div>
+  </section>
+  <section class="form-panel" role="main" aria-label="User authentication forms">
+    <div class="form-container" id="formContainer" aria-live="polite">
+      <form id="signInForm" class="visible" aria-hidden="false" novalidate>
+        <h2 id="signInHeading">Sign In</h2>
+        <p class="subheader" id="signInSubheader">Welcome back! Please enter your credentials.</p>
+        <div class="form-group">
+          <input type="email" id="signInEmail" name="signInEmail" required autocomplete="email" aria-required="true" aria-describedby="signInEmailError" placeholder=" " />
+          <label for="signInEmail">Email address</label>
+          <span class="field-error" id="signInEmailError" aria-live="assertive"></span>
+        </div>
+        <div class="form-group">
+          <input type="password" id="signInPassword" name="signInPassword" required minlength="6" autocomplete="current-password" aria-required="true" aria-describedby="signInPasswordError" placeholder=" " />
+          <label for="signInPassword">Password</label>
+          <span class="field-error" id="signInPasswordError" aria-live="assertive"></span>
+        </div>
+        <button type="submit" aria-describedby="signInHeading">Sign In</button>
+        <div class="form-footer">
+          <button type="button" class="toggle-button" id="showSignUpBtn" aria-haspopup="true" aria-expanded="false">Create Account</button>
+        </div>
+      </form>
+      <form id="signUpForm" class="hidden" aria-hidden="true" novalidate>
+        <h2 id="signUpHeading">Create Account</h2>
+        <p class="subheader" id="signUpSubheader">Join us by creating a free account.</p>
+        <div class="form-group">
+          <input type="text" id="signUpName" name="signUpName" required autocomplete="name" aria-required="true" aria-describedby="signUpNameError" placeholder=" " />
+          <label for="signUpName">Full Name</label>
+          <span class="field-error" id="signUpNameError" aria-live="assertive"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" id="signUpEmail" name="signUpEmail" required autocomplete="email" aria-required="true" aria-describedby="signUpEmailError" placeholder=" " />
+          <label for="signUpEmail">Email address</label>
+          <span class="field-error" id="signUpEmailError" aria-live="assertive"></span>
+        </div>
+        <div class="form-group">
+          <input type="password" id="signUpPassword" name="signUpPassword" required minlength="6" autocomplete="new-password" aria-required="true" aria-describedby="signUpPasswordError" placeholder=" " />
+          <label for="signUpPassword">Password</label>
+          <span class="field-error" id="signUpPasswordError" aria-live="assertive"></span>
+        </div>
+        <button type="submit" aria-describedby="signUpHeading">Sign Up</button>
+        <div class="form-footer">
+          <button type="button" class="toggle-button" id="showSignInBtn" aria-haspopup="true" aria-expanded="false">Back to Sign In</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-content" role="contentinfo">
+    <div class="footer-text">© 2024 Animalia. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
